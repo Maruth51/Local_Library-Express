@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  div
+    ul
+      each book in bookinstance
+        li #{book.book.title}
+        li #{book.status}
+        li #{book.imprint}
+        li #{book.due_back}
